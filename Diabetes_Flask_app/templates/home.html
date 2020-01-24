@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Diabetes Prediction Application</title>
+</head>
+<body>
+    <h1><div class="text-info" style="text-align: center">Diabetes Prediction with Machine Learning</div></h1>
+    <hr>
+    <br>
+
+<h2><div style="text-align: center;">Diabetes Prediction from a Oral Glucose Tolerance test</div></h2>
+
+<br> 
+
+<h2><div style="text-align: center;">Enter the values for the following feilds from Oral Glucose Tolerance Test:</div></h2>
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form method="POST", action="/predict">
+
+                   <div class="form-group">
+                    <label for="Age"><p class="font-weight-bold">AGE (in years):</p></label>
+                    <input type="text" name="Age">
+                   </div>
+
+                   <div class="form-group">
+                        <label for="Weight"><p class="font-weight-bold">Weight (in kgs):</p></label>
+                        <input type="text" name="Weight">
+                    </div>
+                    
+                    <div class="form-group">
+                            <label for="Height"><p class="font-weight-bold">Height (in meters):</p></label>
+                            <input type="text" name="Height">
+                    </div>
+
+                    <div class="form-group">
+                            <label for="pregnencies"><p class="font-weight-bold">Number of Pregnencies:</p></label>
+                            <input type="text" name="pregnencies">
+                    </div>
+
+
+                    <div class="form-group">
+                            <label for="Glucose"><p class="font-weight-bold">Blood Glucose (in mg / dl):</p></label>
+                            <input type="text" name="Glucose">
+                            <small id="Glucose-help" class="form-text text-muted">From your Oral Glucose Tolerance Test Report</small>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="Insulin"><p class="font-weight-bold">Insulin (in 10^-6 U / ml):</p></label>
+                            <input type="text" name="Insulin">
+                            <small id="Insulin-help" class="form-text text-muted">2-Hour Serum Insulin</small>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="DPF"><p class="font-weight-bold">Diabetes Predegree Function:</p></label>
+                            <input type="text" name="DPF">
+                            <small id="DPF-help" class="form-text text-muted">Probability of getting diabetes due to family history </small>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="BP"><p class="font-weight-bold">Diastolic Blood Pressure (in mm Hg):</p></label>
+                            <input type="text" name="BP">
+                    </div>
+
+                    <div class="form-group">
+                            <label for="skinThickness"><p class="font-weight-bold">Triceps Skin Thickness (in mm):</p></label>
+                            <input type="text" name="skinThickness">
+                            <small id="skinThickness-help" class="form-text text-muted">Skin Thickness of the Triceps measured in mm</small>
+                    </div>
+
+                    <input class="btn btn-primary" type="submit" value="Submit">
+
+            </form>
+            <br>
+            
+
+        </div>
+
+    </div>
+    <hr>
+</div>
+
+</body>
+
+</html>
