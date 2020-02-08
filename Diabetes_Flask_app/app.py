@@ -46,7 +46,8 @@ def predict():
 
             # ML_model_read = open("LR_model.pkl", "rb")
             # ML_model_read = open("XGBoost_model.pkl", "rb")
-            ML_model_read = open("Final_xgModel.pkl", "rb")
+            #ML_model_read = open("Final_xgModel.pkl", "rb")
+            ML_model_read = open("RF_Model.pkl", "rb")
 
             ML_model = joblib.load(ML_model_read)
 
