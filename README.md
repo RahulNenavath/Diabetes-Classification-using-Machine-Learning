@@ -1,4 +1,4 @@
-# Diabetes-Prediction-using-Machine-Learning
+# Diabetes-Classification-using-Machine-Learning
 
 A complete Machine Learning solution for predicting Diabetes from pima diabetes dataset, deployed as a FLASK app. The model trained and used is Random Forest Classifier. The ROC AUC score aquired for the model is 0.85
 
